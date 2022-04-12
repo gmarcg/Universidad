@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="1" hostname="DESKTOP-S6P74G8" name="es.unileon.prg1.candyClean.AllTests" skipped="0" tests="31" time="2.549" timestamp="2020-01-09T23:03:02">
+  <properties>
+    <property name="java.vendor" value="Private Build" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="lib" value="lib/junit-4.8.2.jar" />
+    <property name="log" value="log" />
+    <property name="os.name" value="Linux" />
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/mnt/c/Users/guill/apache-ant-1.9.14" />
+    <property name="java.runtime.version" value="1.8.0_222-8u222-b10-1ubuntu1~18.04.1-b10" />
+    <property name="user.name" value="gmarcg00" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64" />
+    <property name="ant.project.default-target" value="todo" />
+    <property name="ant.project.name" value="CandyClean" />
+    <property name="java.version" value="1.8.0_222" />
+    <property name="classes" value="classes" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="log4j" value="lib/log4j-api-2.5.jar" />
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed" />
+    <property name="doc" value="doc" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="52.0" />
+    <property name="src" value="src" />
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre" />
+    <property name="ant.file.CandyClean" value="/mnt/d/guill/Desktop/Subir/p-candyClean-5d/build.xml" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="ant.file" value="/mnt/d/guill/Desktop/Subir/p-candyClean-5d/build.xml" />
+    <property name="os.version" value="4.4.0-18362-Microsoft" />
+    <property name="ant.file.type.CandyClean" value="file" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="25.222-b10" />
+    <property name="ant.library.dir" value="/mnt/c/Users/guill/apache-ant-1.9.14/lib" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="log4j2" value="lib/log4j-core-2.5.jar" />
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+    <property name="_jacoco.agentFile" value="/tmp/jacocoagent2695916896682209784.jar" />
+    <property name="paquetes" value="es.unileon.prg1.candyClean" />
+    <property name="user.home" value="/home/gmarcg00" />
+    <property name="coverage.result.report.dir" value="/mnt/d/guill/Desktop/Subir/p-candyClean-5d/coverage_report/site/jacoco" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="test" value="test" />
+    <property name="coverage.result.exec.file" value="/mnt/d/guill/Desktop/Subir/p-candyClean-5d/coverage_report/jacoco.exec" />
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Private Build" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner es.unileon.prg1.candyClean.AllTests skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/mnt/d/guill/Desktop/Subir/p-candyClean-5d/log/result.xml crashfile=/mnt/d/guill/Desktop/Subir/p-candyClean-5d/junitvmwatcher7096777442063330464.properties propsfile=/mnt/d/guill/Desktop/Subir/p-candyClean-5d/junit3255777397632323277.properties" />
+    <property name="java.class.path" value="/mnt/d/guill/Desktop/Subir/p-candyClean-5d/classes:/mnt/d/guill/Desktop/Subir/p-candyClean-5d/etc:/mnt/d/guill/Desktop/Subir/p-candyClean-5d/lib/junit-4.8.2.jar:/mnt/d/guill/Desktop/Subir/p-candyClean-5d/lib/log4j-api-2.5.jar:/mnt/d/guill/Desktop/Subir/p-candyClean-5d/lib/log4j-core-2.5.jar:/mnt/d/guill/Desktop/Subir/p-candyClean-5d:/mnt/c/Users/guill/apache-ant-1.9.14/lib/ant-launcher.jar:/mnt/c/Users/guill/apache-ant-1.9.14/lib/ant.jar:/mnt/c/Users/guill/apache-ant-1.9.14/lib/ant-junit.jar:/mnt/c/Users/guill/apache-ant-1.9.14/lib/ant-junit4.jar:/tmp/jacocoagent2695916896682209784.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.14 compiled on March 12 2019" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="conf" value="etc" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="user.dir" value="/mnt/d/guill/Desktop/Subir/p-candyClean-5d" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="basedir" value="/mnt/d/guill/Desktop/Subir/p-candyClean-5d" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="ant.core.lib" value="/mnt/c/Users/guill/apache-ant-1.9.14/lib/ant.jar" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="coverage.result.dir" value="/mnt/d/guill/Desktop/Subir/p-candyClean-5d/coverage_report" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="ant.project.invoked-targets" value="todo" />
+  </properties>
+  <testcase classname="es.unileon.prg1.candyClean.BoardTest" name="testNewBoard" time="1.932" />
+  <testcase classname="es.unileon.prg1.candyClean.BoardTest" name="testBoard" time="0.078" />
+  <testcase classname="es.unileon.prg1.candyClean.BoardTest" name="testRemoveRowExcesoFilas" time="0.009" />
+  <testcase classname="es.unileon.prg1.candyClean.BoardTest" name="testToString" time="0.008" />
+  <testcase classname="es.unileon.prg1.candyClean.BoardTest" name="testGetBoxes" time="0.008" />
+  <testcase classname="es.unileon.prg1.candyClean.BoardTest" name="testRemoveRowDefectoFilas" time="0.01" />
+  <testcase classname="es.unileon.prg1.candyClean.BoardTest" name="testRemoveRowDefectoColumnas" time="0.009" />
+  <testcase classname="es.unileon.prg1.candyClean.BoardTest" name="testCompact" time="0.027" />
+  <testcase classname="es.unileon.prg1.candyClean.BoardTest" name="testPrintBoard" time="0.007" />
+  <testcase classname="es.unileon.prg1.candyClean.BoardTest" name="testRemoveRow" time="0.014" />
+  <testcase classname="es.unileon.prg1.candyClean.BoardTest" name="testRemoveRowExcesoColumnas" time="0.008" />
+  <testcase classname="es.unileon.prg1.candyClean.BoxTest" name="testBox" time="0.005" />
+  <testcase classname="es.unileon.prg1.candyClean.BoxTest" name="testSetColor" time="0.005" />
+  <testcase classname="es.unileon.prg1.candyClean.BoxTest" name="testGetColor" time="0.004" />
+  <testcase classname="es.unileon.prg1.candyClean.BoxTest" name="testIsSame" time="0.019">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
+	at es.unileon.prg1.candyClean.BoxTest.testIsSame(Unknown Source)
+</failure>
+  </testcase>
+  <testcase classname="es.unileon.prg1.candyClean.BoxTest" name="testRemoveBox" time="0.005" />
+  <testcase classname="es.unileon.prg1.candyClean.BoxTest" name="testToString" time="0.005" />
+  <testcase classname="es.unileon.prg1.candyClean.CandyCleanTest" name="testSelectBox" time="0.012" />
+  <testcase classname="es.unileon.prg1.candyClean.CandyCleanTest" name="testSelectBoxlb" time="0.011" />
+  <testcase classname="es.unileon.prg1.candyClean.CandyCleanTest" name="testCheckWin" time="0.027" />
+  <testcase classname="es.unileon.prg1.candyClean.CandyCleanTest" name="testCheckLoose" time="0.034" />
+  <testcase classname="es.unileon.prg1.candyClean.CandyCleanTest" name="testGetBoard" time="0.01" />
+  <testcase classname="es.unileon.prg1.candyClean.CandyCleanTest" name="testBoardEmpty" time="0.015" />
+  <testcase classname="es.unileon.prg1.candyClean.ColorTest" name="testGetColorName" time="0.001" />
+  <testcase classname="es.unileon.prg1.candyClean.ColorTest" name="testColor" time="0.001" />
+  <testcase classname="es.unileon.prg1.candyClean.ColorTest" name="testAnotherColor" time="0.0" />
+  <testcase classname="es.unileon.prg1.candyClean.ColorTest" name="testEquals" time="0.001" />
+  <testcase classname="es.unileon.prg1.candyClean.ColorTest" name="testNotEquals" time="0.0" />
+  <testcase classname="es.unileon.prg1.candyClean.ColorTest" name="testWrongColor" time="0.001" />
+  <testcase classname="es.unileon.prg1.candyClean.ColorTest" name="testToString0" time="0.0" />
+  <testcase classname="es.unileon.prg1.candyClean.ColorTest" name="testToString" time="0.001" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

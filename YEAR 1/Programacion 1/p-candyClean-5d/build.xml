@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<project name="CandyClean" basedir="." default="todo" xmlns:jacoco="antlib:org.jacoco.ant" >
+	<property name="src" value="src" />
+	<property name="lib" value="lib/junit-4.8.2.jar" />
+	<property name="classes" value="classes" />
+	<property name="log" value="log" />
+	<property name="doc" value="doc" />
+	<property name="conf" value="etc"/>
+	<property name="test" value="test"/>
+	<property name="paquetes" value="es.unileon.prg1.candyClean" />
+	<property name="log4j" value="lib/log4j-api-2.5.jar" />
+	<property name="log4j2" value="lib/log4j-core-2.5.jar" />
+	<property name="coverage.result.dir" location="./coverage_report" />
+	<property name="coverage.result.report.dir" location="${coverage.result.dir}/site/jacoco" />
+	<property name="coverage.result.exec.file" location="${coverage.result.dir}/jacoco.exec" />		
+
+	<target name="limpiar">
+		<delete dir="${classes}" />
+		<delete dir="${doc}" />
+		<delete dir="${coverage.result.dir}" />
+	</target>
+	
+	 <taskdef uri="antlib:org.jacoco.ant" resource="org/jacoco/ant/antlib.xml">
+	        <classpath path="./lib/jacocoant.jar" />
+	    </taskdef>
+	
+	<target name="compilar" depends="documentar">
+		<mkdir dir="${classes}" />
+		<javac srcdir="${src}" destdir="${classes}" classpath="${lib}" debug="true">
+			<classpath>
+				<pathelement path="${log4j}" />
+				<pathelement path="${log4j2}" />
+			</classpath>
+		</javac>
+		<echo message="Compilacion terminada" />
+	</target>
+
+	<target name="documentar" depends="limpiar">
+		
+		<mkdir dir="${doc}" />
+		
+		<javadoc sourcepath="${src}" classpath="${lib}" destdir="${doc}" packagenames="${paquetes}" verbose="true" author="true" access="private" splitindex="true" version="true">
+			<classpath>
+				
+				<pathelement path="${log4j}" />
+				
+				<pathelement path="${log4j2}" />
+				
+			</classpath>
+			
+		</javadoc>
+	</target>
+
+	<target name="compileTests" depends="compilar">
+		
+		<mkdir dir="${classes}" />
+		
+		<javac srcdir="${test}" destdir="${classes}" classpath="${lib}" includeantruntime="false" />
+		
+		<echo message="Test compilation...done" />
+		
+	</target>
+
+
+    <target name="test" depends="compileTests">
+        <mkdir dir="${log}"/>
+
+            <jacoco:coverage destfile="${coverage.result.exec.file}">
+                <junit showoutput="true" printsummary="yes" haltonfailure="no" enabletestlistenerevents="true" fork="true" >
+
+                    <classpath>
+                        <pathelement path="${classes}" />
+                        <pathelement path="${conf}" />
+                        <pathelement path="${lib}" />
+                    	<pathelement path="${log4j}" />
+                    	<pathelement path="${log4j2}" />
+                    	<pathelement path="." />
+                    </classpath>
+
+                    <batchtest todir="${coverage.result.dir}">
+                        <fileset dir="${classes}">
+                            <exclude name="**/*$*.class" />
+                            <include name="**/*Test.class" />
+                        </fileset>
+                    </batchtest>
+
+                    <test name="${paquetes}.AllTests" haltonfailure="no" outfile="result" todir="${log}">
+                        <formatter type="xml"/>
+                    </test>
+                </junit>
+                
+            </jacoco:coverage>
+        </target>
+	
+
+	<target name="run" depends="compilar">
+		<java fork="yes" classname="es.unileon.prg1.candyClean.MainCandyClean">
+			<classpath>
+				<pathelement path="${classes}" />
+				<pathelement path="${lib}" />
+				<pathelement path="${log4j}" />
+				<pathelement path="${log4j2}" />
+				<pathelement path="." />
+				<pathelement path="etc" />
+			</classpath>
+			<arg value="5" />
+			<arg value="3" />
+		</java>
+	</target>
+	
+	 <target name="report" depends="test">
+	        <jacoco:report>
+
+	            <executiondata>
+	                <file file="${coverage.result.exec.file}" />
+	            </executiondata>
+
+	            <structure name="Coverage with Jacoco">
+	                <classfiles>
+	                    <fileset dir="${classes}" />
+	                </classfiles>
+	                <sourcefiles encoding="UTF-8">
+	                    <fileset dir="${src}" />
+	                </sourcefiles>
+	            </structure>
+
+	            <html destdir="${coverage.result.report.dir}" />
+	            <csv destfile="${coverage.result.report.dir}/report.csv" />
+	            <xml destfile="${coverage.result.report.dir}/report.xml" />
+	        </jacoco:report>
+	      <echo message="Generating coverage report with jacoco...done"/>
+	    </target>
+
+	<target name="todo" depends="compilar,test, limpiar, report, run" />
+
+</project>
+
